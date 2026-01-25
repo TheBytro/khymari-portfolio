@@ -1,0 +1,23 @@
+import {useState} from "react";
+
+export default function Nav() {
+  const [selected, setSelected] = useState("nav_about");
+  
+  const handleClick = (e) => {
+    if (selected === e.target.id) return;
+    if (e.target.tagName !== "LI") return;
+    setSelected(e.target.id);
+  }
+  
+  return (
+    <header className="w-full bg-[#0f0015] text-white py-4 fixed flex">
+      <h1 className="flex-4 px-4 text-2xl font-semibold text-[#e0b3e8]">Khymari Sandy</h1>
+      <ul className="flex flex-wrap flex-row gap-4 justify-end px-4 items-center" onClick={handleClick}>
+        <li id="nav_about" className={selected === "nav_about" && "text-[#d08dd1]"}>About Me</li>
+        <li id="nav_skills" className={selected === "nav_skills" && "text-[#d08dd1]"}>My Skills</li>
+        <li id="nav_projects" className={selected === "nav_projects" && "text-[#d08dd1]"}>My Projects</li>
+        <li id="nav_experience" className={selected === "nav_experience" && "text-[#d08dd1]"}>My Experience</li>
+      </ul>
+    </header>
+  );
+}
