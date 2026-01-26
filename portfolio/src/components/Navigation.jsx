@@ -10,7 +10,7 @@ export default function Nav() {
   }
   
   return (
-    <header className="w-full bg-[#0f0015] text-white py-4 fixed flex">
+    <header className="w-full bg-[#0f0015] text-white py-4 fixed flex top-0 left-0 z-50 shadow-xl">
       <h1 className="flex-4 px-4 text-2xl font-semibold text-[#e0b3e8]">Khymari Sandy</h1>
       <ul className="flex flex-wrap flex-row gap-4 justify-end px-4 items-center" onClick={handleClick}>
         <li id="nav_about" className={selected === "nav_about" && "text-[#d08dd1]"}>About Me</li>
