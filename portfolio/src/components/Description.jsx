@@ -2,7 +2,7 @@ import photo from '../assets/photo.jpg';
 export function aboutme() {
   
   return (
-    <section className="flex flex-col lg:flex-row">
+    <section className="flex flex-col lg:flex-row scroll-mt-28" id="about">
       <div className="flex mb-4 md:mb-0">
         <img src={photo} alt="Selfie Timeeee" className="aspect-[9/16] max-h-[50svh] flex-2 mr-4 w-40"/>
         <div className="flex-1 text-white md:hidden">
