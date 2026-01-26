@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <section className="translate-y-20 px-4 flex flex-col">
+      <section className="translate-y-30 md:translate-y-20 px-4 flex flex-col">
         <About />
         <section className="mt-5">
           <h2 className="text-xl font-semibold text-[#e0b3e8] text-center">My Skills:</h2>
