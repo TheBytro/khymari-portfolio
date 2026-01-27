@@ -1,11 +1,29 @@
 import {smallImageDisplay as SmallDisplay} from "./components/AccentDisplayWithImage.jsx";
 import NavBar from './components/Navigation.jsx'
-import {aboutme, aboutme as About} from "./components/Description.jsx";
+import {aboutme as About} from "./components/Description.jsx";
 import './App.css'
+import { slideshowDisplay as Projects } from "./components/Project.jsx";
 import backendImage from './assets/backend.png';
 import codingImage from './assets/programming.png';
 import toolsImage from './assets/tools.png';
 import techImage from './assets/computer.png';
+import darkThemeImage from './assets/darkTheme.png';
+
+const projectItems = [
+  {
+    image: darkThemeImage,
+    title: 'Penguin Technologies',
+    description: 'An Avalonia-based project designed for an IT help desk company that incorporates Google Maps API for remote assistance.',
+    link: 'https://github.com/TheBytro/penguin-technologies',
+  },
+  {
+    image: darkThemeImage,
+    title: 'Penguin Technologies 2',
+    description: 'An Avalonia-based project designed for an IT help desk company that incorporates Google Maps API for remote assistance.',
+    link: 'https://github.com/TheBytro/penguin-technologies',
+  }
+
+]
 
 function App() {
 
@@ -28,9 +46,12 @@ function App() {
                           image={techImage}/>
           </section>
         </section>
+        <section className="mt-5 scroll-mt-28 flex flex-col" id="projects">
+          <Projects items={projectItems} />
+        </section>
       </section>
     </>
   )
 }
 
-export default App
+export default App;
