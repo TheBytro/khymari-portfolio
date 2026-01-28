@@ -2,7 +2,7 @@ import photo from '../assets/photo.jpg';
 export function aboutme() {
   
   return (
-    <section className="flex flex-col lg:flex-row scroll-mt-28" id="about">
+    <section className="flex flex-col lg:flex-row scroll-mt-28 md:scroll-mt-20" id="about">
       <div className="flex mb-4 md:mb-0">
         <img src={photo} alt="Selfie Timeeee" className="aspect-[9/16] max-h-[50svh] flex-2 mr-4 w-40"/>
         <div className="flex-1 text-white md:hidden">
@@ -15,7 +15,7 @@ export function aboutme() {
           </ul>
         </div>
       </div>
-      <div className="flex-4 text-white mr-4">
+      <div className="flex-4 text-white mr-4 mt-4">
         <h2 className="text-xl font-semibold text-[#e0b3e8]">About Me:</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean.
           Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius
@@ -30,7 +30,7 @@ export function aboutme() {
           netus suscipit auctor curabitur facilisi cubilia curae. Quisque faucibus ex sapien vitae pellentesque sem
           placerat.</p>
       </div>
-      <div className="flex-1 text-white hidden md:block">
+      <div className="flex-1 text-white hidden md:block mt-4">
         <h2 className="text-xl font-semibold text-[#e0b3e8]">My Hobbies and Interests:</h2>
         <ul>
           <li>Badminton</li>
