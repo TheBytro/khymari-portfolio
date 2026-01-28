@@ -16,7 +16,7 @@ export default function Nav() {
         <li id="nav_about" className={selected === "nav_about" && "text-[#d08dd1]"}><a href="#about">About Me</a></li>
         <li id="nav_skills" className={selected === "nav_skills" && "text-[#d08dd1]"}><a href="#skills">My Skills</a></li>
         <li id="nav_projects" className={selected === "nav_projects" && "text-[#d08dd1]"}><a href="#projects">My Projects</a></li>
-        <li id="nav_experience" className={selected === "nav_experience" && "text-[#d08dd1]"}><a href="#experience">My Experience</a></li>
+        <li id="nav_experience" className={selected === "nav_experience" && "text-[#d08dd1]"}><a href="#experiences">My Experience</a></li>
       </ul>
     </header>
   );
